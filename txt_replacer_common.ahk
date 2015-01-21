@@ -100,7 +100,7 @@ SendMode Input
 :*:sync`t::synchronized{space}
 
 ;; C++
-:*:intmain::int{space}main(int argc, char** argv){{}{enter}
+:*:intmain`t::int{space}main(int argc, char** argv){space}{{}{enter}
 
 ; 방향
 ; [s]pecial + [d]irection + [u]p / [d]own / [l]eft / [r]ight
