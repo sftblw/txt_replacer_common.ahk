@@ -84,8 +84,11 @@ SendMode Input
 
 ; 프로그래밍
 ; NetBeans의 키워드와 유사한 면이 많습니다.
+; IDE의 자동 포맷팅 기능에도 어느정도 의존합니다.
+; { 와 } 기호는 { } 안에 씁니다.
+;; JAVA
 :*:sout`t::System.out.println(
-:*:psvm`t::public static void main(String[] args) {{} 
+:*:psvm`t::public static void main(String[] args) {{}{enter}
 :*:pu`t::public{Space} 
 :*:pr`t::private{Space} 
 :*:Str`t::String{Space} 
@@ -94,6 +97,10 @@ SendMode Input
 :*:st`t::static{Space} 
 :*:co`t::const{Space} 
 :*:fi`t::final{Space} 
+:*:sync`t::synchronized{space}
+
+;; C++
+:*:intmain::int{space}main(int argc, char** argv){{}{enter}
 
 ; 방향
 ; [s]pecial + [d]irection + [u]p / [d]own / [l]eft / [r]ight
