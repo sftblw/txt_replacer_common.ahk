@@ -76,6 +76,9 @@ SendMode Input
 :*:reloadhotstring::
 	reload
 	return
+:*:openhotstringgist::
+	RUN https://gist.github.com/softblow/f5580239839e02cc7cd6
+	return
     
 ; 재미삼아
 :*:stsun::츤♪ 츤♪ 데~레 츤♪ 데~레 츤♪ 츤♪
