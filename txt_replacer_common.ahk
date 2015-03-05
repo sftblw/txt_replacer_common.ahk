@@ -1,18 +1,18 @@
-/*
+﻿/*
 	txt_replacer_common.ahk
-	rev.pub1
-	
+	rev.pub2
+
 	# 설치
-	
+
 	http://ahkscript.org/ , 설치 후 이 파일을 더블클릭해서 실행
-	
-	
+
+
 	# 기본 사용법
-	
+
 	## 기초 사용법
-	
+
 	두 가지 케이스가 있습니다.
-	
+
 	- 입력하면 자동으로 변환
 	    - 예) stsun → 츤♪ 츤♪ 데~레 츤♪ 데~레 츤♪ 츤♪
 	- 입력 후 탭 누르면 변환
@@ -23,42 +23,42 @@
 			｜사｜의｜녀｜과
 			｜랑｜の｜와｜と
 			｜恋　　｜と
-	
+
 	첫 번째 경우를 회피하려면, 분리해서 쓴 뒤 삭제 등을 이용하면 됩니다.
-	
+
 	stsu{space}n → 스페이스를 삭제
-	
+
 	## 단축 문자열 읽는 법
-	
+
 	:*:단축문자열::자동완성결과 꼴입니다.
-	
+
 	- 단축 문자열 끝에 `t가 있는 경우 탭을 눌러 자동으로 완성하는 경우입니다.
 	- 단축 문자열만 있는 경우 입력하면 바로 그 문자열로 교체됩니다.
-	
+
 	## 관리 키워드
-	
+
 	입력하면 자동으로 변환하는 케이스입니다.
 	edithotstring : 이 스크립트 편집창을 띄웁니다.
 	openhotstringfolder : 이 스크립트가 있는 폴더를 엽니다.
 	reloadhotstring : 이 스크립트를 새로고침합니다.
-	
-	
-	
+
+
+
 	# 그 외
-	
-	
+
+
 	## 이름짓기에 관해
-	
+
 	대부분의 자동변환 키워드는 s로 시작하는데, 이는 special을 뜻합니다. 필요한 경우 각각 부분의 주석을 참고해주세요.
-	
+
 	## 단축 문자열 종류
-	
+
 	단축 문자열의 제일 앞의 키워드에 대한 설명입니다.
-	
+
 	:*: → 한영키와 상관없이 무조건
 	:*?C: → 해당 문자열을 입력했을때만
 	:*?b0C: → 문자열의 삭제도 수동으로 하는 경우 (write 함수를 만들어서 쓰고있습니다.)
-	
+
 	자세한 정보는 오토핫키 홈페이지의 문서를 참조해주세요. (찾기 귀찮음)
 */
 
@@ -79,7 +79,7 @@ SendMode Input
 :*:openhotstringgist::
 	RUN https://gist.github.com/softblow/f5580239839e02cc7cd6
 	return
-    
+
 
 ; 재미삼아
 :*:stsun::츤♪ 츤♪ 데~레 츤♪ 데~레 츤♪ 츤♪
@@ -106,14 +106,14 @@ SendMode Input
 ;; JAVA
 :*:sout`t::System.out.println(
 :*:psvm`t::public static void main(String[] args) {{}{enter}
-:*:pu`t::public{Space} 
-:*:pr`t::private{Space} 
-:*:Str`t::String{Space} 
-:*:puvo`t::public void{Space} 
-:*:ab`t::abstract{Space} 
-:*:st`t::static{Space} 
-:*:co`t::const{Space} 
-:*:fi`t::final{Space} 
+:*:pu`t::public{Space}
+:*:pr`t::private{Space}
+:*:Str`t::String{Space}
+:*:puvo`t::public void{Space}
+:*:ab`t::abstract{Space}
+:*:st`t::static{Space}
+:*:co`t::const{Space}
+:*:fi`t::final{Space}
 :*:sync`t::synchronized{space}
 
 ;; C++
@@ -123,7 +123,7 @@ SendMode Input
 :*:fn`t::function{space}(){space}{{}{left}{left}{left}{left}
 :*:doc`t::document
 :*:win`t::window
-:*:elem`t::element 
+:*:elem`t::element
 
 ; 방향
 ; [s]pecial + [d]irection + [u]p / [d]own / [l]eft / [r]ight
@@ -137,11 +137,14 @@ SendMode Input
 :*:sdru::↗
 :*:sdur::↗
 :*:sddl::↙
-:*:sdld::↙ 
+:*:sdld::↙
 :*:sddr::↘
 :*:sdrd::↘
 :*:sdlr::↔
 :*:sdrl::↔
+
+; 문장기호 특수문자로 변환
+:*?C:...`t::…
 
 ; 특수문자
 ; [s]pecial + 모양
@@ -198,7 +201,7 @@ SendMode Input
 :*?b0C:skawaii::
 	write(7, "可愛い")
 	return
-	
+
 ; 한국어
 :*?C:stadakr::다녀왔습니다
 
