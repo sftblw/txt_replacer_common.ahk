@@ -1,4 +1,4 @@
-﻿/*
+/*
 	txt_replacer_common.ahk
 	rev.pub2
 
@@ -98,7 +98,6 @@ SendMode Input
 ;｜恋　　｜と
 :*:stotonok`t::.`n　　｜그　　｜당`n　　｜녀｜그｜신`n｜사｜의｜녀｜과`n｜랑｜の｜와｜と`n｜恋　　｜と
 
-
 ; 프로그래밍
 ; NetBeans의 키워드와 유사한 면이 많습니다.
 ; IDE의 자동 포맷팅 기능에도 어느정도 의존합니다.
@@ -142,6 +141,57 @@ SendMode Input
 :*:sdrd::↘
 :*:sdlr::↔
 :*:sdrl::↔
+
+; 그리스 문자
+:*C:alpha`t::α
+:*C:beta`t::β
+:*C:gamma`t::γ
+:*C:delta`t::δ
+:*C:epsilon`t::ε
+:*C:zeta`t::ζ
+:*C:eta`t::η
+:*C:theta`t::θ
+:*C:iota`t::ι
+:*C:kappa`t::κ
+:*C:lambda`t::λ
+:*C:mu`t::μ
+:*C:nu`t::ν
+:*C:xi`t::ξ
+:*C:omicron`t::ο
+:*C:pi`t::π
+:*C:rho`t::ρ
+:*C:sigma`t::σ
+:*C:tau`t::τ
+:*C:upsilon`t::υ
+:*C:phi`t::φ
+:*C:chi`t::χ
+:*C:psi`t::ψ
+:*C:omega`t::ω
+:*C:Alpha`t::Α
+:*C:Beta`t::Β
+:*C:Gamma`t::Γ
+:*C:Delta`t::Δ
+:*C:Epsilon`t::Ε
+:*C:Zeta`t::Ζ
+:*C:Eta`t::Η
+:*C:Theta`t::Θ
+:*C:Iota`t::Ι
+:*C:Kappa`t::Κ
+:*C:Lambda`t::Λ
+:*C:Mu`t::Μ
+:*C:Nu`t::Ν
+:*C:Xi`t::Ξ
+:*C:Omicron`t::Ο
+:*C:Pi`t::Π
+:*C:Rho`t::Ρ
+:*C:Sigma`t::Σ
+:*C:Tau`t::Τ
+:*C:Upsilon`t::Υ
+:*C:Phi`t::Φ
+:*C:Chi`t::Χ
+:*C:Psi`t::Ψ
+:*C:Omega`t::Ω
+
 
 ; 문장기호 특수문자로 변환
 :*?C:...`t::…
