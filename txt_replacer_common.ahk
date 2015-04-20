@@ -1,6 +1,6 @@
 /*
 	txt_replacer_common.ahk
-	rev.pub3 : updater added
+	rev.pub3 : 업데이터 추가됨
 
 	# 설치
 
