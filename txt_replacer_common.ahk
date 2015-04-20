@@ -41,7 +41,7 @@
 	edithotstring : 이 스크립트 편집창을 띄웁니다.
 	openhotstringfolder : 이 스크립트가 있는 폴더를 엽니다.
 	reloadhotstring : 이 스크립트를 새로고침합니다.
-
+	updatehotstring : 이 스크립트의 최신 버전을 gist에서 다운로드받아 새로고침합니다.
 
 
 	# 그 외
@@ -83,7 +83,7 @@ SendMode Input
 	UrlDownloadToFile, https://gist.githubusercontent.com/sftblw/f5580239839e02cc7cd6/raw/55abad11e9ef7635971cbf665c138fa7e08f9457/txt_replacer_common.ahk, %A_ScriptDir%/txt_replacer_common_temp.ahk
 	if ErrorLevel {
 		FileDelete, %A_ScriptDir%/txt_replacer_common_temp.ahk
-		MsgBox, 'Failed to download.'
+		MsgBox, 다운로드하지 못했습니다.
 	} else {
         FileEncoding, UTF-8
     
@@ -97,7 +97,7 @@ SendMode Input
         FileMove, %A_ScriptDir%/txt_replacer_common_temp.ahk, %A_ScriptDir%/txt_replacer_common.ahk, 1
 		FileDelete, %A_ScriptDir%/txt_replacer_common_temp.ahk
         
-		MsgBox, 'Updated. will be reloaded...'
+		MsgBox, 업데이트에 성공했습니다.
 		reload
 	}
 	return
@@ -279,7 +279,4 @@ SendMode Input
 
 write(x,y)
 {
-	sendinput,{left}{right}{bs %x%}
-	sendinput,%y%
-	return
-}
+	sendinput,{left}{r
