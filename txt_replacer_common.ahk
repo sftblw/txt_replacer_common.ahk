@@ -77,7 +77,7 @@ SendMode Input
 	reload
 	return
 :*:openhotstringgist::
-	RUN https://gist.github.com/softblow/f5580239839e02cc7cd6
+	RUN https://gist.github.com/sftblw/f5580239839e02cc7cd6
 	return
 
 
