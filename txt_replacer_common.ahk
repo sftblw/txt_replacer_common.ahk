@@ -1,6 +1,6 @@
 /*
 	txt_replacer_common.ahk
-	rev.pub2
+	rev.pub3 : updater added
 
 	# 설치
 
@@ -68,7 +68,7 @@ SendMode Input
 
 ; 관리 키워드
 :*:edithotstring::
-	RUN notepad.exe "%A_ScriptDir%\txt_replacer_common.ahk"
+	Edit
 	return
 :*:openhotstringfolder::
 	RUN explorer.exe "%A_ScriptDir%"
@@ -79,7 +79,28 @@ SendMode Input
 :*:openhotstringgist::
 	RUN https://gist.github.com/sftblw/f5580239839e02cc7cd6
 	return
-
+:*:updatehotstring::
+	UrlDownloadToFile, https://gist.githubusercontent.com/sftblw/f5580239839e02cc7cd6/raw/55abad11e9ef7635971cbf665c138fa7e08f9457/txt_replacer_common.ahk, %A_ScriptDir%/txt_replacer_common_temp.ahk
+	if ErrorLevel {
+		FileDelete, %A_ScriptDir%/txt_replacer_common_temp.ahk
+		MsgBox, 'Failed to download.'
+	} else {
+        FileEncoding, UTF-8
+    
+        ; 줄바꿈을 해당 OS 식으로 바꾸기 위해 읽었다 다시 씀
+        FileRead, fileTempVar, %A_ScriptDir%/txt_replacer_common_temp.ahk
+        FileDelete, %A_ScriptDir%/txt_replacer_common_temp.ahk
+        FileAppend, %fileTempVar%, %A_ScriptDir%/txt_replacer_common_temp.ahk
+    
+        ; 이동, 원본삭제
+        FileDelete, %A_ScriptDir%/txt_replacer_common.ahk
+        FileMove, %A_ScriptDir%/txt_replacer_common_temp.ahk, %A_ScriptDir%/txt_replacer_common.ahk, 1
+		FileDelete, %A_ScriptDir%/txt_replacer_common_temp.ahk
+        
+		MsgBox, 'Updated. will be reloaded...'
+		reload
+	}
+	return
 
 ; 재미삼아
 :*:stsun::츤♪ 츤♪ 데~레 츤♪ 데~레 츤♪ 츤♪
