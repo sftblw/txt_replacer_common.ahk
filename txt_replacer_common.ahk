@@ -279,4 +279,7 @@ SendMode Input
 
 write(x,y)
 {
-	sendinput,{left}{r
+	sendinput,{left}{right}{bs %x%}
+	sendinput,%y%
+	return
+}
