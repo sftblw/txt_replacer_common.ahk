@@ -76,11 +76,11 @@ SendMode Input
 :*:reloadhotstring::
 	reload
 	return
-:*:openhotstringgist::
-	RUN https://gist.github.com/sftblw/f5580239839e02cc7cd6
+:*:openhotstringrepo::
+	RUN https://github.com/sftblw/txt_replacer_common.ahk
 	return
 :*:updatehotstring::
-	UrlDownloadToFile, https://gist.githubusercontent.com/sftblw/f5580239839e02cc7cd6/raw/txt_replacer_common.ahk, %A_ScriptDir%/txt_replacer_common_temp.ahk
+	UrlDownloadToFile, https://raw.githubusercontent.com/sftblw/txt_replacer_common.ahk/master/txt_replacer_common.ahk
 	if ErrorLevel {
 		FileDelete, %A_ScriptDir%/txt_replacer_common_temp.ahk
 		MsgBox, 다운로드하지 못했습니다.
