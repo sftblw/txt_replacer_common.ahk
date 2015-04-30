@@ -80,7 +80,7 @@ SendMode Input
 	RUN https://github.com/sftblw/txt_replacer_common.ahk
 	return
 :*:updatehotstring::
-	UrlDownloadToFile, https://raw.githubusercontent.com/sftblw/txt_replacer_common.ahk/master/txt_replacer_common.ahk
+	UrlDownloadToFile, https://raw.githubusercontent.com/sftblw/txt_replacer_common.ahk/master/txt_replacer_common.ahk, %A_ScriptDir%/txt_replacer_common_temp.ahk
 	if ErrorLevel {
 		FileDelete, %A_ScriptDir%/txt_replacer_common_temp.ahk
 		MsgBox, 다운로드하지 못했습니다.
