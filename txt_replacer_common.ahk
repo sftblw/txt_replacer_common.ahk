@@ -123,6 +123,11 @@ SendMode Input
 ; NetBeans의 키워드와 유사한 면이 많습니다.
 ; IDE의 자동 포맷팅 기능에도 어느정도 의존합니다.
 ; { 와 } 기호는 { } 안에 씁니다.
+
+;; 일반
+:*:for`t::for{space}(;;){space}{{}{enter}{up}{home}{right}{right}{right}{right}{right}
+:*:while`t::while{space}(){space}{{}{enter}{up}{home}{right}{right}{right}{right}{right}{right}{right}
+
 ;; JAVA
 :*:sout`t::System.out.println(
 :*:psvm`t::public static void main(String[] args) {{}{enter}
@@ -135,6 +140,16 @@ SendMode Input
 :*:co`t::const{Space}
 :*:fi`t::final{Space}
 :*:sync`t::synchronized{space}
+
+;; C
+
+;#include <windows.h>
+;#include <stdio.h>
+;#include <stdlib.h>
+;#include <string.h>
+;#include <conio.h>
+;#include <locale.h>
+:*:cinclude`t::{#}include <windows.h>{enter}{#}include <stdio.h>{enter}{#}include <stdlib.h>{enter}{#}include <string.h>{enter}{#}include <conio.h>{enter}{#}include <locale.h>
 
 ;; C++
 :*:intmain`t::int{space}main(int argc, char** argv){space}{{}{enter}
