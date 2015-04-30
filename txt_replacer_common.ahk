@@ -152,6 +152,7 @@ SendMode Input
 :*:sdll::←
 :*:sdrr::→
 :*:->`t::→
+:*:<-`t::←
 :*:sdlu::↖
 :*:sdul::↖
 :*:sdru::↗
