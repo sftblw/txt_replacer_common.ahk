@@ -8,7 +8,7 @@ My short typing assist, based on autohotkey hotstring.
 
 1. http://ahkscript.org/ 에서 오토핫키 설치
 2. 다운받은 install_replacer.ahk 혹은 txt_replacer.common.ahk를 더블클릭해서 실행
-  - install_replacer.ahk 를 실행시, 작업 스케줄러로 컴퓨터가 켜질때 관리자 권한으로 스크립트가 실행되게 합니다. 아니면 안 켜지더라구요.
+  - install_replacer.ahk 를 **관리자 권한으로** 실행시, 작업 스케줄러로 컴퓨터가 켜질때 관리자 권한으로 스크립트가 실행되게 합니다. 아니면 안 켜지더라구요.
   - txt_replacer_common.ahk 를 실행시, 그냥 실행만 됩니다. 시작 프로그램에는 직접 등록해야 합니다.
 
 # 기본 사용법

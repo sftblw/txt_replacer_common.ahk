@@ -21,7 +21,8 @@ if ErrorLevel {
 
 	; 시작 프로그램에 등록
 	; http://stackoverflow.com/a/17438532
-	run schtasks /create /tn "txt_replacer_common_ahk" /tr C:\ahk_scripts\txt_replacer_common.ahk /sc onstart
+  ; run schtasks /delete /tn "txt_replacer_common_ahk"
+	run schtasks ""/create /ru %username% /tn "txt_replacer_common_ahk" /tr C:\ahk_scripts\txt_replacer_common.ahk /sc onlogon /rl highest /it""
   ; run %comspec% ""schtasks /search /tn "txt_replacer_common_ahk""" ; 추가된 태스크 보여주기 (미동작)
 
 	MsgBox, Succesfully installed.
