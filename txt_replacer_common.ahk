@@ -271,7 +271,7 @@ SendMode Input
 :*:tm`t::™
 :*:checkl::✓ ; light
 :*:checkw::✓ ; 흰색은 아니지만 일관성을 위해 w 붙임
-:*::checkb::✔ ; bold
+:*:checkb::✔ ; bold
 
 ; 동그라미숫자 (유비트 시뮬레이터용)
 ; 탭으로 완성
