@@ -149,14 +149,13 @@ SendMode Input
 ;#include <string.h>
 ;#include <conio.h>
 ;#include <locale.h>
-:*:cinclude`t::{#}include <windows.h>{enter}{#}include <stdio.h>{enter}{#}include <stdlib.h>{enter}{#}include <string.h>{enter}{#}include <conio.h>{enter}{#}include 
+:*:cinclude`t::{#}include <windows.h>{enter}{#}include <stdio.h>{enter}{#}include <stdlib.h>{enter}{#}include <string.h>{enter}{#}include <conio.h>{enter}{#}include <locale.h>
+:*?b0C:.h`t::{backspace}{shiftdown}{home}{shiftup}^x{#}include <^v>
+:*:printf`t::printf("",);{left}{left}{left}{left}
 
 ;; C#
 :*:psvmcs`t::public static void Main(string[] args) {{}{enter}
 :*:wlcs`t::Console.WriteLine("");{left}{left}{left}
-
-:*?b0C:.h`t::{backspace}{shiftdown}{home}{shiftup}^x{#}include <^v>
-:*:printf`t::printf("",);{left}{left}{left}{left}
 
 ;; C++
 :*:intmain`t::int{space}main(int argc, char** argv){space}{{}{enter}
