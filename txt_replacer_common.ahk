@@ -151,6 +151,10 @@ SendMode Input
 ;#include <locale.h>
 :*:cinclude`t::{#}include <windows.h>{enter}{#}include <stdio.h>{enter}{#}include <stdlib.h>{enter}{#}include <string.h>{enter}{#}include <conio.h>{enter}{#}include 
 
+;; C#
+:*:psvmcs`t::public static void Main(string[] args) {{}{enter}
+:*:wlcs`t::Console.WriteLine("");{left}{left}{left}
+
 <locale.h>
 :*?b0C:.h`t::{backspace}{shiftdown}{home}{shiftup}^x{#}include <^v>
 :*:printf`t::printf("",);{left}{left}{left}{left}
@@ -267,6 +271,9 @@ SendMode Input
 
 ; 특수문자 : 그 외
 :*:tm`t::™
+:*:checkl::✓ ; light
+:*:checkw::✓ ; 흰색은 아니지만 일관성을 위해 w 붙임
+:*::checkb::✔ ; bold
 
 ; 동그라미숫자 (유비트 시뮬레이터용)
 ; 탭으로 완성
