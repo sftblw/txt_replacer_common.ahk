@@ -155,7 +155,6 @@ SendMode Input
 :*:psvmcs`t::public static void Main(string[] args) {{}{enter}
 :*:wlcs`t::Console.WriteLine("");{left}{left}{left}
 
-<locale.h>
 :*?b0C:.h`t::{backspace}{shiftdown}{home}{shiftup}^x{#}include <^v>
 :*:printf`t::printf("",);{left}{left}{left}{left}
 
