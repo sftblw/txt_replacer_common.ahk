@@ -266,6 +266,9 @@ SendMode Input
 :*:striuw::△
 :*:stridb::▼
 :*:stridw::▽
+:*:scircleb::●
+:*:scirclew::○
+:*:scircled::◎
 
 ; 특수문자 : 그 외
 :*:tm`t::™
