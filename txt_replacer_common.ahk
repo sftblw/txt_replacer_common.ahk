@@ -278,6 +278,9 @@ SendMode Input
 :*:secheckl::🗸 ; s / emoji / check / light (unicode 7.0)
 :*:secheckh::✔️ ; s / emoji / check / heavy
 :*:secross::❌ ; bold
+:*:sequestion::❓ ; 
+:*:sequestionb::❓ ; black: on Unicode 6.0, Emoji 1.0: just question mark
+:*:sequestionw::❔ ; 
 
 ; 동그라미숫자 (유비트 시뮬레이터용)
 ; 탭으로 완성
