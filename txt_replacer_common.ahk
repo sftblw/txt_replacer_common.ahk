@@ -314,6 +314,22 @@ SendMode Input
 :*?C:stadakr::다녀왔습니다
 
 
+; Esperantan leteron
+
+:*?C:c^^::ĉ
+:*?C:C^^::Ĉ
+:*?C:g^^::ĝ
+:*?C:G^^::Ĝ
+:*?C:h^^::ĥ
+:*?C:H^^::Ĥ
+:*?C:j^^::ĵ
+:*?C:J^^::Ĵ
+:*?C:s^^::ŝ
+:*?C:S^^::Ŝ
+:*?C:u^^::ŭ
+:*?C:U^^::Ŭ
+
+
 write(x,y)
 {
 	sendinput,{left}{right}{bs %x%}
