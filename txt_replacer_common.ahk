@@ -1,6 +1,5 @@
 /*
 	txt_replacer_common.ahk
-	rev.pub3 : 업데이터 추가됨
 
 	# 설치
 
@@ -59,7 +58,7 @@
 	:*?C: → 해당 문자열을 입력했을때만
 	:*?b0C: → 문자열의 삭제도 수동으로 하는 경우 (write 함수를 만들어서 쓰고있습니다.)
 
-	자세한 정보는 오토핫키 홈페이지의 문서를 참조해주세요. (찾기 귀찮음)
+	자세한 정보는 오토핫키 홈페이지의 문서를 참조해주세요.
 */
 
 
@@ -101,70 +100,6 @@ SendMode Input
 		reload
 	}
 	return
-
-; 재미삼아
-:*:stsun::츤♪ 츤♪ 데~레 츤♪ 데~레 츤♪ 츤♪
-;.
-;　　｜彼　　｜君
-;｜恋｜女｜彼｜と
-;｜　｜の｜女｜
-;｜　｜　｜と｜
-;｜　　　｜
-:*:stotono`t::.`n　　｜彼　　｜君`n｜恋｜女｜彼｜と`n｜　｜の｜女｜`n｜　｜　｜と｜`n｜　　　｜
-;.
-;　　｜그　　｜당
-;　　｜녀｜그｜신
-;｜사｜의｜녀｜과
-;｜랑｜の｜와｜と
-;｜恋　　｜と
-:*:stotonok`t::.`n　　｜그　　｜당`n　　｜녀｜그｜신`n｜사｜의｜녀｜과`n｜랑｜の｜와｜と`n｜恋　　｜と
-
-; 프로그래밍
-; NetBeans의 키워드와 유사한 면이 많습니다.
-; IDE의 자동 포맷팅 기능에도 어느정도 의존합니다.
-; { 와 } 기호는 { } 안에 씁니다.
-
-;; 일반
-:*:for`t::for{space}(;;){space}{{}{enter}{up}{home}{right}{right}{right}{right}{right}
-:*:while`t::while{space}(){space}{{}{enter}{up}{home}{right}{right}{right}{right}{right}{right}{right}
-
-;; JAVA
-:*:sout`t::System.out.println(
-:*:psvm`t::public static void main(String[] args) {{}{enter}
-:*:pu`t::public{Space}
-:*:pr`t::private{Space}
-:*:Str`t::String{Space}
-:*:puvo`t::public void{Space}
-:*:ab`t::abstract{Space}
-:*:st`t::static{Space}
-:*:co`t::const{Space}
-:*:fi`t::final{Space}
-:*:sync`t::synchronized{space}
-
-;; C
-
-;#include <windows.h>
-;#include <stdio.h>
-;#include <stdlib.h>
-;#include <string.h>
-;#include <conio.h>
-;#include <locale.h>
-:*:cinclude`t::{#}include <windows.h>{enter}{#}include <stdio.h>{enter}{#}include <stdlib.h>{enter}{#}include <string.h>{enter}{#}include <conio.h>{enter}{#}include <locale.h>
-:*?b0C:.h`t::{backspace}{shiftdown}{home}{shiftup}^x{#}include <^v>
-:*:printf`t::printf("",);{left}{left}{left}{left}
-
-;; C#
-:*:psvmcs`t::public static void Main(string[] args) {{}{enter}
-:*:wlcs`t::Console.WriteLine("");{left}{left}{left}
-
-;; C++
-:*:intmain`t::int{space}main(int argc, char** argv){space}{{}{enter}
-
-;; Javascript
-:*:fn`t::function{space}(){space}{{}{left}{left}{left}{left}
-:*:doc`t::document
-:*:win`t::window
-:*:elem`t::element
 
 ; 방향
 ; [s]pecial + [d]irection + [u]p / [d]own / [l]eft / [r]ight
@@ -282,6 +217,9 @@ SendMode Input
 :*:sequestionb::❓ ; black: on Unicode 6.0, Emoji 1.0: just question mark
 :*:sequestionw::❔ ; 
 
+; 특수문자
+:*:szwsp::​ ; zero width space
+
 ; 동그라미숫자 (유비트 시뮬레이터용)
 ; 탭으로 완성
 :*?C:(1)`t::①
@@ -300,34 +238,6 @@ SendMode Input
 :*?C:(14)`t::⑭
 :*?C:(15)`t::⑮
 :*?C:(16)`t::⑯
-
-
-; 일본어
-:*?b0C:sohayou::
-	write(4, "おはよう！")
-	return
-:*?b0C:skawaii::
-	write(7, "可愛い")
-	return
-
-; 한국어
-:*?C:stadakr::다녀왔습니다
-
-
-; Esperantan leteron
-
-:*?C:c^^::ĉ
-:*?C:C^^::Ĉ
-:*?C:g^^::ĝ
-:*?C:G^^::Ĝ
-:*?C:h^^::ĥ
-:*?C:H^^::Ĥ
-:*?C:j^^::ĵ
-:*?C:J^^::Ĵ
-:*?C:s^^::ŝ
-:*?C:S^^::Ŝ
-:*?C:u^^::ŭ
-:*?C:U^^::Ŭ
 
 
 write(x,y)
